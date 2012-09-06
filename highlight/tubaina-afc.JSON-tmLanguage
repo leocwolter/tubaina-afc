@@ -5,6 +5,7 @@
     { "include": "#listTag"},
     { "include": "#refTag"},
     { "include": "#blockTags"},
+    { "include": "#inlineTags"},
     { "include": "#noteTag"}
   ],
 

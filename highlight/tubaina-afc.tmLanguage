@@ -24,6 +24,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#inlineTags</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#noteTag</string>
 		</dict>
 	</array>
