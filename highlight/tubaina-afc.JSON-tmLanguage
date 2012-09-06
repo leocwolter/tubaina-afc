@@ -1,0 +1,77 @@
+{ "name": "Tubaina Afc",
+  "scopeName": "text.afc",
+  "fileTypes": ["afc"],
+  "patterns": [
+    { "include": "#listTag"},
+    { "include": "#refTag"},
+    { "include": "#blockTags"},
+    { "include": "#noteTag"}
+  ],
+
+  "repository":{
+    "inlineSyntaxes":{
+      "name": "markup.bold.inline.afc",
+      "begin": "(\\*|_|%){2}",
+      "end": "(\\*|_|%){2}"
+    },
+
+    "inlineTags":{  
+      "name": "entity.name.tag.inline.afc",
+      "begin": "(\\[)(quote|index|TODO|img|label)",
+      "patterns": [
+        { "name": "markup.italic.images.afc",
+          "match": "(.*?)(w=|h=)([0-9]+%?)",
+          "captures": {
+            "2": { "name": "keyword.w.afc" },
+            "3": { "name": "variable.w.afc" }
+          }
+        },
+        { "name": "markup.italic.content.afc",
+          "match": "."
+        }
+      ],
+      "end": "(\\])"
+    },
+
+    "noteTag":{
+      "name": "comment.inline.tag.note.afc",
+      "begin": "(\\[)(note)(.*?)(\\])",
+      "end": "(\\[)(\\/)(note)(\\])"
+    },
+
+    "refTag":{
+      "name": "entity.name.tag.ref.afc",
+      "begin": "(\\[)(ref)(-code|-label)?(\\s)",
+      "patterns": [
+        { "name": "invalid.illegal.underscore.afc",
+          "match": "_"
+        },
+        { "name": "comment.inline.tag.ref.afc",
+          "match": "."
+        }
+      ],
+       "end": "(\\])"
+    },
+
+    "blockTags":{
+      "name": "entity.name.tag.container.afc",
+      "begin": "(\\[)(chapter|section|list|box|code|title)(.*?)(\\])",
+      "beginCaptures": {
+        "3": { "name": "markup.italic.description.afc" }
+      },
+      "patterns": [
+        { "include": "#inlineSyntaxes" },
+        { "name": "markup.italic.item.afc",
+          "match": "^(\\s+)?(\\*)^(\\*)"
+        },
+        { "include": "$self" },
+        { "name": "string.content.afc",
+          "match": "."
+        }
+      ],
+    "end": "(\\[)(\\/)(chapter|section|list|box|code|title)(\\])"
+    }
+
+  },
+    "uuid": "cb37ad00-724d-4914-806f-ba7d56e60ccc"
+}
