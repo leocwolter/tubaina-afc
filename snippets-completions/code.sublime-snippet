@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+[code ${1:linguagem}]
+	${2:codigo}
+[/code]
+]]></content>
+	<tabTrigger>code</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

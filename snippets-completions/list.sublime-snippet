@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+[list ${1:number/letter}]
+	* ${2:conteudo}
+[/list]
+]]></content>
+	<tabTrigger>list</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

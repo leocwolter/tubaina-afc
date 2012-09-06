@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+[ref-${1:label/code} ${2:referencia}]
+]]></content>
+	<tabTrigger>ref</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

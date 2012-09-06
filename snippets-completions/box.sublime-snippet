@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+[box ${1:titulo}]
+	${2:conteudo}
+[/box]
+]]></content>
+	<tabTrigger>box</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

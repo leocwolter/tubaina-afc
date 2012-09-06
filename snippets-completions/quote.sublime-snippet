@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+[quote "${1:frase}"
+		-- ${2:autor}]
+]]></content>
+	<tabTrigger>quote</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

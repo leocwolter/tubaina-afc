@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+[img ${1:caminho} w=${2:100%}]
+]]></content>
+	<tabTrigger>img</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>

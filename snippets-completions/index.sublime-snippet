@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+[index ${1:titulo}]
+]]></content>
+	<tabTrigger>index</tabTrigger>
+	<scope>text.afc</scope>
+</snippet>
