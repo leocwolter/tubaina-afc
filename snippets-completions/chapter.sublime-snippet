@@ -4,7 +4,6 @@
 	${2:content}
 	[section ${3:title}]
 		${4:content}
-[/chapter]
 ]]></content>
 	<tabTrigger>chapter</tabTrigger>
 	<scope>text.afc</scope>
