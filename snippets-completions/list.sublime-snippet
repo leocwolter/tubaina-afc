@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 [list ${1:number/letter}]
-	* ${2:conteudo}
+	* ${2:content}
 [/list]
 ]]></content>
 	<tabTrigger>list</tabTrigger>

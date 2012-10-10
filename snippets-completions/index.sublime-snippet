@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-[index ${1:titulo}]
+[index ${1:title}]
 ]]></content>
 	<tabTrigger>index</tabTrigger>
 	<scope>text.afc</scope>

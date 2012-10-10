@@ -1,9 +1,9 @@
 <snippet>
 	<content><![CDATA[
-[chapter ${1:titulo}]
-	${2:conteudo}
-	[section ${3:titulo}]
-		${4:conteudo}
+[chapter ${1:title}]
+	${2:content}
+	[section ${3:title}]
+		${4:content}
 [/chapter]
 ]]></content>
 	<tabTrigger>chapter</tabTrigger>
