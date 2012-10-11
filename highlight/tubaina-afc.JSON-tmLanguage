@@ -12,8 +12,8 @@
   "repository":{
     "inlineSyntaxes":{
       "name": "markup.bold.inline.afc",
-      "begin": "(\\*|_|%){2}",
-      "end": "(\\*|_|%){2}"
+      "begin": "(\\*|_|%|:){2}",
+      "end": "(\\*|_|%|:){2}"
     },
 
     "inlineTags":{  
