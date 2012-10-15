@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-[label ${1:referencia}]
+[label ${1:reference}]
 ]]></content>
 	<tabTrigger>label</tabTrigger>
 	<scope>text.afc</scope>

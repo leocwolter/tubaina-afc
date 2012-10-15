@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-[TODO ${1:tarefa}]
+[TODO ${1:task}]
 ]]></content>
 	<tabTrigger>TODO</tabTrigger>
 	<scope>text.afc</scope>

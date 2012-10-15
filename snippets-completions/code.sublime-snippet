@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
-[code ${1:linguagem}]
-	${2:codigo}
+[code ${1:language}]
+	${2:code}
 [/code]
 ]]></content>
 	<tabTrigger>code</tabTrigger>
