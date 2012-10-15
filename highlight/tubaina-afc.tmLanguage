@@ -20,6 +20,10 @@
 		</dict>
 		<dict>
 			<key>include</key>
+			<string>#codeTag</string>
+		</dict>
+		<dict>
+			<key>include</key>
 			<string>#blockTags</string>
 		</dict>
 		<dict>
@@ -36,7 +40,7 @@
 		<key>blockTags</key>
 		<dict>
 			<key>begin</key>
-			<string>(\[)(chapter|section|list|box|code|title)(.*?)(\])</string>
+			<string>(\[)(chapter|section|list|box|title)(.*?)(\])</string>
 			<key>beginCaptures</key>
 			<dict>
 				<key>3</key>
@@ -46,7 +50,7 @@
 				</dict>
 			</dict>
 			<key>end</key>
-			<string>(\[)(\/)(chapter|section|list|box|code|title)(\])</string>
+			<string>(\[)(\/)(chapter|section|list|box|title)(\])</string>
 			<key>name</key>
 			<string>entity.name.tag.container.afc</string>
 			<key>patterns</key>
@@ -65,6 +69,32 @@
 					<key>include</key>
 					<string>$self</string>
 				</dict>
+				<dict>
+					<key>match</key>
+					<string>.</string>
+					<key>name</key>
+					<string>string.content.afc</string>
+				</dict>
+			</array>
+		</dict>
+		<key>codeTag</key>
+		<dict>
+			<key>begin</key>
+			<string>(\[)(code)(.*?)(\])</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>3</key>
+				<dict>
+					<key>name</key>
+					<string>markup.italic.description.afc</string>
+				</dict>
+			</dict>
+			<key>end</key>
+			<string>(\[)(\/)(code)(\])</string>
+			<key>name</key>
+			<string>entity.name.tag.container.afc</string>
+			<key>patterns</key>
+			<array>
 				<dict>
 					<key>match</key>
 					<string>.</string>

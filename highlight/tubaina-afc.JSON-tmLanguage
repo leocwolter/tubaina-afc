@@ -4,6 +4,7 @@
   "patterns": [
     { "include": "#listTag"},
     { "include": "#refTag"},
+    { "include": "#codeTag"},
     { "include": "#blockTags"},
     { "include": "#inlineTags"},
     { "include": "#noteTag"}
@@ -54,9 +55,23 @@
        "end": "(\\])"
     },
 
+    "codeTag":{
+      "name": "entity.name.tag.container.afc",
+      "begin": "(\\[)(code)(.*?)(\\])",
+      "beginCaptures": {
+        "3": { "name": "markup.italic.description.afc" }
+      },
+      "patterns": [
+        { "name": "string.content.afc",
+          "match": "."
+        }
+      ],
+    "end": "(\\[)(\\/)(code)(\\])"
+    },
+
     "blockTags":{
       "name": "entity.name.tag.container.afc",
-      "begin": "(\\[)(chapter|section|list|box|code|title)(.*?)(\\])",
+      "begin": "(\\[)(chapter|section|list|box|title)(.*?)(\\])",
       "beginCaptures": {
         "3": { "name": "markup.italic.description.afc" }
       },
@@ -70,9 +85,8 @@
           "match": "."
         }
       ],
-    "end": "(\\[)(\\/)(chapter|section|list|box|code|title)(\\])"
+    "end": "(\\[)(\\/)(chapter|section|list|box|title)(\\])"
     }
 
   },
     "uuid": "cb37ad00-724d-4914-806f-ba7d56e60ccc"
-}
