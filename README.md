@@ -7,7 +7,15 @@ How to install
 ### Without Package Control
 To use this package just clone this repository into your "Packages" folder:  
 		
+Ubuntu:
+
 		cd ~/.config/sublime-text-2/Packages  
+
+MAC:
+
+		cd /Users/USER/Library/Application\ Support/Sublime\ Text\ 2/Packages
+
+	
 		git clone git@github.com:leonardowolter/tubaina-afc.git  
 
 
