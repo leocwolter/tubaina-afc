@@ -15,6 +15,7 @@ MAC:
 
 		cd /Users/USER/Library/Application\ Support/Sublime\ Text\ 2/Packages
 
+Git Clone:
 	
 		git clone git@github.com:leonardowolter/tubaina-afc.git  
 
