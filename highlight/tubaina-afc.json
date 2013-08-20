@@ -72,7 +72,7 @@
     
     "blockTags":{
       "name": "entity.name.tag.container.afc",
-      "begin": "(\\[)(chapter|section|list|box|title)(.*?)(\\])",
+      "begin": "(\\[)(chapter|part|section|list|box|title)(.*?)(\\])",
       "beginCaptures": {
         "3": { "name": "markup.italic.description.afc" }
       },
@@ -86,7 +86,7 @@
           "match": "."
         }
       ],
-    "end": "(\\[)(\\/)(chapter|section|list|box|title)(\\])"
+    "end": "(\\[)(\\/)(chapter|part|section|list|box|title)(\\])"
     }
   },
   "uuid": "cb37ad00-724d-4914-806f-ba7d56e60ccc"
