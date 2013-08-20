@@ -2,7 +2,8 @@
   "scopeName": "text.afc",
   "fileTypes": ["afc"],
   "patterns": [
-    { "include": "#listTag"},
+    { "include"
+    : "#listTag"},
     { "include": "#refTag"},
     { "include": "#codeTag"},
     { "include": "#blockTags"},
@@ -62,13 +63,13 @@
         "3": { "name": "markup.italic.description.afc" }
       },
       "patterns": [
-        { "name": "string.content.afc",
-          "match": "."
-        }
-      ],
-    "end": "(\\[)(\\/)(code)(\\])"
+          { "name": "string.content.afc",
+            "match": "."
+          }
+        ],
+      "end": "(\\[)(\\/)(code)(\\])"
     },
-
+    
     "blockTags":{
       "name": "entity.name.tag.container.afc",
       "begin": "(\\[)(chapter|section|list|box|title)(.*?)(\\])",
@@ -87,6 +88,6 @@
       ],
     "end": "(\\[)(\\/)(chapter|section|list|box|title)(\\])"
     }
-
   },
-    "uuid": "cb37ad00-724d-4914-806f-ba7d56e60ccc"
+  "uuid": "cb37ad00-724d-4914-806f-ba7d56e60ccc"
+}
