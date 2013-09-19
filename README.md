@@ -14,6 +14,10 @@ Ubuntu:
 MAC:
 
 		cd /Users/USER/Library/Application\ Support/Sublime\ Text\ 2/Packages
+		
+Windows
+
+		C:\Users\<username>\AppData\Roaming\Sublime Text 2\Packages
 
 Git Clone:
 	
